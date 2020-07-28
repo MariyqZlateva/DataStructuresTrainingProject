@@ -2,7 +2,7 @@ package com.mariazlateva.stack;
 
 import java.util.EmptyStackException;
 
-public class MyStackImpl implements MyStack {
+class MyStackImpl implements MyStack {
 
     //== fields ==
 
@@ -63,4 +63,12 @@ public class MyStackImpl implements MyStack {
     public boolean isEmpty() {
         return this.top == 0;
     }// end of method isEmpty
-}
+
+    @Override
+    public void printStack() {
+        for (int i = this.top - 1; i >= 0; i--) {
+            System.out.println("\t\t\t[ " + this.stack[i] + " ]");
+        }
+    }//end of class printStack
+
+}//end of class MyStackImpl

@@ -1,6 +1,6 @@
 package com.mariazlateva.stack;
 
-public interface MyStack {
+interface MyStack {
 
     void push(int value);
 
@@ -12,6 +12,6 @@ public interface MyStack {
 
     boolean isEmpty();
 
-
+    void printStack();
 
 }// end of interface
