@@ -1,6 +1,6 @@
 package com.mariazlateva.queue;
 
-public interface MyQueue {
+interface MyQueue {
 
     void add(int value);
 

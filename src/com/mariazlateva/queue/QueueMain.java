@@ -1,6 +1,7 @@
 package com.mariazlateva.queue;
 
-public class QueueMain {
+class QueueMain {
+
     public static void main(String[] args) {
         MyQueue queue = new MyQueueImpl(5);
         queue.add(1);
@@ -24,18 +25,18 @@ public class QueueMain {
         queue.add(6);
         // |6|0|0|4|5 - front = 3, back = 1
 
-        System.out.println("peek = "+queue.peek()); //4
-        System.out.println("size = "+ queue.size()); //3
+        System.out.println("peek = " + queue.peek()); //4
+        System.out.println("size = " + queue.size()); //3
 
-       queue.print();
-       queue.add(7);
-       queue.add(8);
-        System.out.println("size = " +queue.size() );//5
+        queue.print();
+        queue.add(7);
+        queue.add(8);
+        System.out.println("size = " + queue.size());//5
         //resized
         System.out.println("------");
         queue.add(9);
-        System.out.println("size = " +queue.size() );//5
-        System.out.println("peek = " +queue.peek() );//4
+        System.out.println("size = " + queue.size());//5
+        System.out.println("peek = " + queue.peek());//4
         queue.print();
     }//end of main method
 }//end of class QueueMain

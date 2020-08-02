@@ -2,7 +2,7 @@ package com.mariazlateva.queue;
 
 import java.util.NoSuchElementException;
 
-public class MyQueueImpl implements MyQueue {
+ class MyQueueImpl implements MyQueue {
     //== fields ==
     private int[] queue;
     private int front;
