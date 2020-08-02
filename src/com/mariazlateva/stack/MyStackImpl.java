@@ -16,7 +16,7 @@ class MyStackImpl implements MyStack {
         } else {
             this.stack = new int[capacity];
         }
-        this.top = 0;
+       this.top = 0;
 
     }//end of constructor
 
@@ -69,6 +69,6 @@ class MyStackImpl implements MyStack {
         for (int i = this.top - 1; i >= 0; i--) {
             System.out.println("\t\t\t[ " + this.stack[i] + " ]");
         }
-    }//end of class printStack
+    }//end of method printStack
 
 }//end of class MyStackImpl

@@ -4,7 +4,7 @@ import java.util.EmptyStackException;
 
 class StackMain {
     public static void main(String[] args) {
-        MyStack stack = new MyStackTrainingClassImpl(5);
+        MyStack stack = new MyStackTrainingClassImpl(4);
         for (int i = 0; i < 7; i++) {
             System.out.println("Pushing " + (i + 1));
             stack.push(i + 1);
