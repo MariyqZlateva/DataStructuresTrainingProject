@@ -32,11 +32,11 @@ public class MyQueueImpl implements MyQueue {
                 }
             } else {
                 int j = 0;
-                for (int i = this.front; i < this.queue.length; i++) {
-                    replacingQueue[j] = this.queue[1];
+                for (int i = this.front; i < this.queue.length; i++, j++) {
+                    replacingQueue[j] = this.queue[i];
                 }
                 for (int i = 0; i < this.back; i++, j++) {
-                    replacingQueue[j] = this.queue[1];
+                    replacingQueue[j] = this.queue[i];
                 }
             }
             this.queue = replacingQueue;
