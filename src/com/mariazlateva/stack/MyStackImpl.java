@@ -10,6 +10,7 @@ class MyStackImpl implements MyStack {
     private int top;
 
     //== constructors ==
+
     public MyStackImpl(int capacity) {
         if (capacity <= 0) {
             this.stack = new int[10];

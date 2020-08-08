@@ -27,7 +27,7 @@ import java.util.NoSuchElementException;
             int numElem = this.size();
             if (this.isNotWrapped()) {
                 for (int i = this.front, j = 0; i < this.back; i++, j++) {
-                    replacingQueue[j] = this.queue[1];
+                    replacingQueue[j] = this.queue[i];
 
                 }
             } else {

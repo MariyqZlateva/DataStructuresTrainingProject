@@ -1,14 +1,16 @@
 package com.mariazlateva.stack;
 
+
 import java.util.EmptyStackException;
 
 public class MyStackTrainingClassImpl implements MyStack {
 
-    // ==fields==
+    //==fields==
     private int[] stack;
     private int top;
 
-    //==constructor==
+    //==constructors==
+
     public MyStackTrainingClassImpl(int capacity) {
         if (capacity <= 0) {
             this.stack = new int[10];
@@ -19,6 +21,7 @@ public class MyStackTrainingClassImpl implements MyStack {
     }//end of constructor
 
     //==public methods==
+
     @Override
     public void push(int value) {
         if (this.top == this.stack.length) {
@@ -27,7 +30,7 @@ public class MyStackTrainingClassImpl implements MyStack {
             this.stack = replacingStack;
         }
         this.stack[this.top++] = value;
-    }//end of push method
+    }//end of method push
 
     @Override
     public int pop() {
@@ -46,22 +49,22 @@ public class MyStackTrainingClassImpl implements MyStack {
             throw new EmptyStackException();
         }
         return this.stack[this.top - 1];
-    }//end of peek method
+    }//end of method peek
 
     @Override
     public int size() {
         return this.top;
-    }
+    }//end of method size
 
     @Override
     public boolean isEmpty() {
         return this.top == 0;
-    }
+    }//end of method isEmpty
 
     @Override
     public void printStack() {
         for (int i = this.top - 1; i >= 0; i--) {
-            System.out.println("\t\t\t[ " + this.stack[i] + " ]");
+            System.out.println("\t\t\t [ " + this.stack[i] + " ]");
         }
-    }
-}
+    }//end of method printStack
+}//end of MyStackTrainingClassImpl class

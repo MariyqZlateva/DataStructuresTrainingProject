@@ -3,7 +3,7 @@ package com.mariazlateva.queue;
 class QueueMain {
 
     public static void main(String[] args) {
-        MyQueue queue = new MyQueueImpl(5);
+        MyQueue queue = new MyQueueTrainingClass(4);
         queue.add(1);
         queue.add(2);
         queue.add(3);
