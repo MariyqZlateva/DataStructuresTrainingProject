@@ -3,7 +3,7 @@ package com.mariazlateva.stack;
 
 import java.util.EmptyStackException;
 
-public class MyStackTrainingClassImpl implements MyStack {
+ class MyStackTrainingClassImpl implements MyStack {
 
     //==fields==
     private int[] stack;

@@ -2,7 +2,7 @@ package com.mariazlateva.stack;
 
 import java.util.LinkedList;
 
-public class MyStackListImpl implements MyStack {
+ class MyStackListImpl implements MyStack {
 
     //== fields ==
     private LinkedList<Integer> stack;
