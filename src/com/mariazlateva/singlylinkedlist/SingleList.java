@@ -6,7 +6,7 @@ public interface SingleList {
 
     int removeFromFront();
 
-    void addOrder(int value);
+    void addInOrder(int value);
 
     int size();
 

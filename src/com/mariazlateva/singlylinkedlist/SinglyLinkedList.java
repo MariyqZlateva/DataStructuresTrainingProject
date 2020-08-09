@@ -42,8 +42,21 @@ class SinglyLinkedList implements SingleList {
     }
 
     @Override
-    public void addOrder(int value) {
-
+    public void addInOrder(int value) {
+        if (this.head == null || value <= this.head.getData()) {
+            this.addToFront(value);
+        } else {
+            SingleNode previous = this.head;
+            SingleNode current = this.head.getNext();
+            while (current != null && current.getData() < value) {
+                previous = previous.getNext();
+                current = current.getNext();
+            }
+            SingleNode newNode = new MySinglyLinkedNode(value);
+            previous.setNext(newNode);
+            newNode.setNext(current);
+            this.size++;
+        }
     }
 
     @Override
